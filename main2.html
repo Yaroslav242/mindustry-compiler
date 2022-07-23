@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test ui</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/mode/yaml/yaml.js"></script>
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+  </head>
+  <body>
+    <div class="main">
+      <p>Hello world!</p>
+      <a href="tutorial.html">Tutorial here</a>
+      <code>
+      <div id="code">
+      </div></code>
+      <script type="text/javascript">
+      var myCodeMirror = CodeMirror(document.getElementById("code"), {
+        value: "test:\n    123",
+        mode:  "yaml"
+        });
+      </script>
+    </div>
+  </body>
+</html>

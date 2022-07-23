@@ -3,4 +3,37 @@ html,body{
     padding:0px;
     height:100%;
     width:100%;
+    justify-content: center;
+    display: flex;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  color: #333345;
+}
+.main {
+  font-family: Verdana, Helvetica, sans-serif;
+  width: 70%;
+  padding:10px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 1px lightgrey solid;
+  height: 90vh;
+}
+#code {
+  padding: 5px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px black solid;
+}
+.code_comment {
+  background-color: transparent !important;
+  color: lightgrey !important;
+  text-decoration: underline black;
+}
+
+.code_text {
+  background-color: transparent !important;
+  color: black !important;
 }

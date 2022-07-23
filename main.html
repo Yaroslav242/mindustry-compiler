@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test ui</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="highlight-ta.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <p>Hello world!</p>
+      <a href="tutorial.html">Tutorial here</a>
+      <code><div id="cntr-div" class="my-class">
+        <textarea id="code" rows="8" cols="80" style=""</textarea>
+      </div></code>
+      <script type="text/javascript">
+        var div = document.getElementById('cntr-div');
+        var ta = document.getElementById('code');
+        var patterns = {
+          "Code comment": {"pattern": new RegExp("#+\n", "g"), "css": "code_comment"},
+          "plain text": {"pattern": new RegExp(".", "g"), "css": "code_text"},
+        }
+
+        var hlghtTa = hlghtta(div, ta, patterns);
+        // Initialize highlight-ta after instantiating
+        var hlghtTa = hlghtta();
+
+        hlghtTa.init(div, ta);
+
+        // Set Highlights after instantiating
+        hlghtTa.setHighlights(patterns);
+      </script>
+    </div>
+  </body>
+</html>
