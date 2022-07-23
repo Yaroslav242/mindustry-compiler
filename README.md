@@ -6,6 +6,6 @@ This is Jakob's project, thank him for the idea and code.
 
 Future ideas:
 * Flexible interface
-* Built in tutorial and examples
+* Built-in tutorial and examples
 * A code browser like the mod browser in-game
 * Mindustry mod to run and test entirely in-game since this is all JS anyway)
